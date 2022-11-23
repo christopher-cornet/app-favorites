@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-y: hidden;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #c82222 46%, #ffa21d 100%);
+    min-height: 100vh;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Sololearn */
+.sololearn img {
+    height: 100px;
+    width: 100px;
+}
+
+.sololearn p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.sololearn-navbar {
+    color: rgb(127, 0, 156);
+    text-shadow: 50px;
+}
+
+.sololearn-navbar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 117, 212);
+    transition: 0.6s;
+}
+
+.test:hover {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+.test2:hover {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+.test3:hover {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+
+/* Opera GX */
+.operagx img {
+    height: 100px;
+    width: 100px;
+}
+
+.operagx p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.operagx-navbar {
+    color: rgb(255, 65, 40);
+}
+
+.operagx-navbar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(214, 0, 0);
+    transition: 0.6s;
+}
+
+/* Discord */
+.discord img {
+    height: 100px;
+    width: 100px;
+}
+
+.discord p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.discord-navbar {
+    color: rgb(28, 0, 238);
+}
+
+.discord-navbar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 0, 238);
+    transition: 0.6s;
+}
+
+/* Applis */
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin-top: 180px;
+    text-align: center;
+}
+
+.apps p {
+    text-align: justify;
+    margin-top: 10px;
+}

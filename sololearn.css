@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #c850c0 30%, #c85052 66%, #ffcc70 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.navbar {
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 80px;
+    width: 80px;
+}
+
+.img-sololearn {
+    margin: 10px 0px 0px 20px;
+}
+
+.test:hover {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+
+.img-sololearn, .right {
+    flex: 1;
+}
+
+.sololearn {
+    text-align: center;
+    font-size: 30px;
+    animation-name: title;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.sololearn:hover {
+    color: #ffcc70;
+    cursor: pointer;
+}
+@keyframes title {
+    0%   {color: rgb(0, 140, 255);}
+    15%  {color: rgb(255, 179, 0);}
+    30%  {color: rgb(166, 0, 255);}
+    45% {color: rgb(255, 0, 0);}
+    60%  {color: rgb(166, 0, 255);}
+    75%  {color: rgb(255, 179, 0);}
+    100%   {color: rgb(0, 140, 255);}
+}
+
+/* Titres */
+.title1 {
+    font-size: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.title2 {
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.title2 span {
+    color: #ececec;
+}
+
+/* Bouton du centre */
+.buttonmid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.buttonmid a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    background-color: #006eff;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0095ff;
+}
+
+/* Bouton réseaux */
+.buttonunder img {
+    height: 30px;
+    width: 30px;
+}
+
+.buttonunder {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+.buttonunder span {
+    color: #fff;
+}
+
+.btnleft {
+    background-color: rgb(221, 11, 11);
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btnleft:hover {
+    background-color: rgb(185, 0, 0);
+}
+
+.btnmid {
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.btnmid:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.btnright {
+    background-color: rgb(6, 73, 207);
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+}
+.btnright:hover {
+    background-color: rgb(6, 23, 207);
+}
+
+/* Carrés */
+.square {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin-top: 20px;
+}
+.square1 {
+    background-color: white;
+}
+.square2 {
+    background-color: white;
+}
+.square3 {
+    background-color: white;
+}
+.square p {
+    text-align: center;
+}
+.square span {
+    color: rgb(175, 175, 175);
+}
