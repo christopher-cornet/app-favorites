@@ -29,9 +29,22 @@ body {
     margin: 10px 0px 0px 20px;
 }
 
-.test:hover {
+.flip {
+    animation: grow 1.5s;
+    width: 98px; height: 98px;
+}
+.flip:hover {
     transform: rotate(-360deg);
     transition: transform 500ms ease-in-out;
+}
+/* Animation d'agrandissement sur le logo */
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .img-sololearn, .right {
@@ -44,6 +57,7 @@ body {
     animation-name: title;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+    margin-right: 30px;
 }
 .sololearn:hover {
     color: #ffcc70;
@@ -165,9 +179,13 @@ body {
     grid-row-gap: 0px;
     justify-items: center;
     margin-top: 20px;
+    overflow-x: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .square1 {
     background-color: white;
+    height: 400px;
 }
 .square2 {
     background-color: white;
@@ -175,9 +193,31 @@ body {
 .square3 {
     background-color: white;
 }
+.square3 p {
+    max-width: 95%;
+}
 .square p {
     text-align: center;
 }
 .square span {
     color: rgb(175, 175, 175);
+}
+
+/* Grid 2 */
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+.grid1 {
+    margin-left: 20px;
+    background-color: #fff;
+}
+.grid2 {
+    background-color: #fff;
+    margin-right: 20px;
+    margin-left: 16px;
 }

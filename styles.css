@@ -42,6 +42,9 @@ header h1 {
 .sololearn img {
     height: 100px;
     width: 100px;
+    animation: grow 1.5s;
+    width: 98px;
+    height: 98px;
 }
 
 .sololearn p {
@@ -60,15 +63,7 @@ header h1 {
     transition: 0.6s;
 }
 
-.test:hover {
-    transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;
-}
-.test2:hover {
-    transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;
-}
-.test3:hover {
+.flip:hover {
     transform: rotate(-360deg);
     transition: transform 500ms ease-in-out;
 }
@@ -77,6 +72,9 @@ header h1 {
 .operagx img {
     height: 100px;
     width: 100px;
+    animation: grow 1.5s;
+    width: 98px;
+    height: 98px;
 }
 
 .operagx p {
@@ -98,6 +96,9 @@ header h1 {
 .discord img {
     height: 100px;
     width: 100px;
+    animation: grow 1.5s;
+    width: 98px;
+    height: 98px;
 }
 
 .discord p {
@@ -125,6 +126,8 @@ header h1 {
     justify-items: center;
     margin-top: 180px;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .apps p {
@@ -136,10 +139,29 @@ header h1 {
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 footer a {
     text-decoration: none;
     color: #fff;
     font-size: 30px;
+}
+footer a:hover {
+    text-decoration: none;
+    color: rgb(77, 106, 255);
+    font-size: 30px;
+}
+footer img {
+    margin-left: 15px;
+    animation: grow 1.5s;
+    width: 98px; height: 98px;
+}
+/* Animation d'agrandissement sur les logos */
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
