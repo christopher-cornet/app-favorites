@@ -182,6 +182,7 @@ body {
     overflow-x: hidden;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .square1 {
     background-color: white;
@@ -201,23 +202,4 @@ body {
 }
 .square span {
     color: rgb(175, 175, 175);
-}
-
-/* Grid 2 */
-.grid {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-}
-.grid1 {
-    margin-left: 20px;
-    background-color: #fff;
-}
-.grid2 {
-    background-color: #fff;
-    margin-right: 20px;
-    margin-left: 16px;
 }
