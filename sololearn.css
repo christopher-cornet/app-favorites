@@ -137,6 +137,9 @@ body {
 .buttonunder span {
     color: #fff;
 }
+.buttonunder button {
+    padding: 10px;
+}
 
 .btnleft {
     background-color: rgb(221, 11, 11);
